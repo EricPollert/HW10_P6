@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
 
 struct car{
@@ -17,7 +18,14 @@ int main() {
     cin >> cars[i].GallonsUsed;
   }
 
+double totalMPG = 0;
+for(int i = 0; i < NumCars; i++){
+  double mpg = cars[i].MilesDriven / cars[i].GallonsUsed;
+  totalMPG += mpg;
 
+  
+}
+  
 }
 
 
